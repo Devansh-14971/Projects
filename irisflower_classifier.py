@@ -6,9 +6,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
 iris = pd.read_csv("C:/Users/lenovo/Desktop/College/ML/datasets/Iris.csv")
-#print("Target Labels\n", iris["Species"].unique())
-#fig = px.scatter(iris, x="SepalWidthCm", y="SepalLengthCm", color="Species")
-#fig.show()
+print("Target Labels\n", iris["Species"].unique())
+fig = px.scatter(iris, x="SepalWidthCm", y="SepalLengthCm", color="Species")
+fig.show()
 iris = iris.drop("Id",axis = 1)
 x = iris.drop("Species", axis=1)
 y = iris["Species"]
