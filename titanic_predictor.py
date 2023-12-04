@@ -19,6 +19,6 @@ model.fit(X_train, y_train)
 y_predict = model.predict(X_test)
 print(y_predict[:10],'\n Vs \n',test['Survived'].values[:10])
 
-##from sklearn.linear_model import LogisticRegressionCV
-##model_cv = LogisticRegressionCV(10)
-##model_cv.fit(X_train, y_train)
+from sklearn.linear_model import LogisticRegressionCV
+model_cv = LogisticRegressionCV(10)
+model_cv.fit(X_train, y_train)
