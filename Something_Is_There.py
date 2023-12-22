@@ -10,8 +10,6 @@ import json
 
 mybolt = Bolt(conf_1.Api_key,conf_1.Device_id)
 
-#Modify the conf_1 to include the url for telegram
-
 # Detector is a class that creates an instance that analyses an image input in the corresponding functions 
 #and uses google's mediapipe to find and report the location of modes that are present in a hand
 class Detector():
